@@ -1,0 +1,11 @@
+<div class="container">
+<h2>{{headtext}}</h2>
+<input type="text"  name="fname"  [(ngModel)]='firstname'>
+<br><br>
+<input type="text" name="lname" [(ngModel)]='lastname'>
+<br><br>
+<input type="button" value="Submit"  [title]="title" (click)="onview()">
+</div>
+
+  <h1>{{title}}</h1>
+  <app-sub-login [myawesomevalue]="title"></app-sub-login>
